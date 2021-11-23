@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg,#091353,#9D84B7,#D5D5D5);
+}
+.overlay{
+    height: fit-content;
+    width: 20vw;
+    border-radius: 15px;
+    background-image: url(img/Astaaa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.music-player-container{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.image-music-container{
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.6rem;
+}
+.song-image{
+    width: 100%;
+    border-radius: 60%;
+    animation-name: mover;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes mover{
+    from{
+        transform: rotate(50deg);
+    }
+    to{
+        transform: rotate(700deg);
+    }
+}
+.title-music-container{
+    width: 80%;
+    height: fit-content;
+    font-family: 'Righteous';
+}
+.song-title{
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-family: 'Righteous';
+}
+.song-author{
+    margin-top: 0.1rem;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+}
+.main-song-controls{
+    height: 30px;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon{
+    height: 50%;
+    width: 55%;
+}
+.bon{
+    border:oldlace;
+    background-color: transparent;
+    text-decoration: none;
+}
